@@ -1,0 +1,13 @@
+def dna2rna(dna):
+    rna = ''
+    for symbol in dna.upper():
+        if symbol == 'A':
+            rna += 'U'
+        elif symbol == 'T':
+            rna += 'A'
+        elif symbol == 'G':
+            rna += 'C'
+        elif symbol == 'C':
+            rna += 'G'
+    return rna
+   
