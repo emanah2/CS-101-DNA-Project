@@ -1,0 +1,13 @@
+def reverse_compliment(dna):
+    compliment= ''
+    for symbol in dna:
+        if symbol == 'A':
+            compliment += 'T'
+        elif symbol == 'T':
+            compliment += 'A'
+        elif symbol == 'G':
+            compliment += 'C'
+        elif symbol == 'C':
+            compliment += 'G'
+    reverse_compliment = compliment[::-1]
+    return reverse_compliment
