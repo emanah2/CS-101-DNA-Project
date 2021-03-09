@@ -1,0 +1,11 @@
+def locate_substring(dna_snippet, dna):
+    l1 = []
+    length = len(dna)
+    index = 0
+    while index < length:
+        i = dna.find(dna_snippet,index)
+        if i ==-1:
+            return l1
+        l1.append(i)
+        index = i + 1
+    return l1
