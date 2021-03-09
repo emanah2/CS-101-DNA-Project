@@ -1,0 +1,11 @@
+
+def mendels_law( hom, het, rec ):
+   pop_a = hom + het + rec
+   pop_b = pop_a - 1
+   het_prob_1 = het/pop_a
+   rec_prob_1 = rec/pop_a
+   het_prob_2 = (het-1)/pop_b
+   het_prob_3 = het/pop_b
+   rec_prob_2 = (rec-1)/pop_b
+   rec_prob_3 = rec/pop_b
+   return 1- (rec_prob_1*rec_prob_2)- (rec_prob_1*het_prob_3*0.5)-(het_prob_1*rec_prob_3*0.5)-(het_prob_1*het_prob_2*0.25)
